@@ -1,0 +1,22 @@
+{
+  "name": "rtsp-client",
+  "version": "0.0.1",
+  "description": "a rtsp client",
+  "main": "index.js",
+  "scripts": {
+    "test": "node example/index.js"
+  },
+  "keywords": [
+    "rtsp",
+    "client"
+  ],
+  "author": "solfKwolf",
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "www-authenticate": "^0.6.2"
+  },
+  "devDependencies": {
+    "semantic-sdp": "^3.25.1"
+  }
+}
