@@ -1,5 +1,5 @@
 {
-  "name": "rtsp-client",
+  "name": "@solfkwolf/rtsp-client",
   "version": "0.0.1",
   "description": "a rtsp client",
   "main": "index.js",
