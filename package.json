@@ -10,8 +10,16 @@
     "rtsp",
     "client"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/solfKwolf/rtsp-client.git"
+  },
   "author": "solfKwolf",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/solfKwolf/rtsp-client/issues"
+  },
+  "homepage": "https://github.com/solfKwolf/rtsp-client#readme",
   "dependencies": {
     "lodash": "^4.17.21",
     "www-authenticate": "^0.6.2"
