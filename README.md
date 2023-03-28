@@ -4,6 +4,8 @@ RTSP-CLIENT
 The RTSP client for Node.js
 
 
+> so far only support rtsp over TCP.
+
 ## Getting Started
 
 
@@ -37,6 +39,7 @@ client.on("connected", async () => {
 
 client.connect("rtsp://localhost:8554/mystream");
 ```
+
 
 ## Contributing
 
