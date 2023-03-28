@@ -18,7 +18,12 @@ client.on("connected", async () => {
   let videoOffer = offer.getMedia("video");
   const setup = await client.setup(videoOffer.control, "RTP/AVP/TCP;unicast;interleaved=0-1")
   console.log("S --> C", setup)
-  const sessionId =  parseInt(setup.headers[2].values[0].value)
+  let sessionId = "";
+  setup.headers.forEach(item => {
+    if(item.name == "Session") {
+      sessionId = item.values[0].value
+    }
+  })
   console.log("sessionId", sessionId)
   client.setSession(sessionId)
   const play  = await client.play()
@@ -26,4 +31,3 @@ client.on("connected", async () => {
 })
 
 client.connect("rtsp://localhost:8554/mystream");
-// client.connect("rtsp://192.168.159.50:50002/cmVhbHBsYXk_bT0wJmRldj0xLjIuNy44OjgwMDAmY2g9MiZ0eXBlPTE=")
